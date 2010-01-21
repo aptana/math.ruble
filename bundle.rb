@@ -21,6 +21,7 @@ END
       submenu.command 'Decimal to Hex'
       submenu.command 'Decimal to Octal'
       submenu.command 'Hex to Decimal'
+      submenu.command 'Octal to Decimal'
     end
     main_menu.separator
     main_menu.command 'Send Line / Selection to Google Calculator'
