@@ -1,6 +1,4 @@
 require 'radrails'
-require 'cgi'
-require 'net/http'
 require 'radrails/progress'
 
 command 'Send Line / Selection to Google Calculator' do |cmd|
@@ -8,9 +6,11 @@ command 'Send Line / Selection to Google Calculator' do |cmd|
   cmd.output = :replace_selection
   cmd.input = :selection, :line
   cmd.invoke do
+    require 'cgi'
     query = CGI::escape(STDIN.read)
-    abort if query.empty?
-    
+    context.exit_discard if query.empty?
+      
+    require 'net/http'    
     RadRails.call_with_progress(:message => 'Querying Google...') do
       response = Net::HTTP.get('www.google.com', '/search?q=' + query)
       if response =~ /<b>.*? = (.*?)<\/b>/
