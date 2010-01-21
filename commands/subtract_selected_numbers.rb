@@ -1,10 +1,11 @@
 require 'radrails'
-# FIXME Not sure how to convert this and get it working!
+
 command 'Subtract Numbers in Line / Selection' do |cmd|
   cmd.key_binding = 'CONTROL+M2+C'
   cmd.output = :insert_as_text
   cmd.input = :selection, :line
-  cmd.invoke =<<-EOF
-printf " = %s" `{ tr -d ,|tr -cs '[0-9.]' ' '|perl -pe 's/([0-9.]+) (?=[0-9.])/$1-/g'; echo; } | bc -l`| perl -pe 's/(\.[^0]+)0+$|\.0+$/$1/'
-EOF
+  cmd.invoke do
+    numbers = $stdin.read.gsub(/[$ۣ]/, '').scan(/((?:\b|-)[0-9]+(?:\.[0-9]+)?)\b/)
+    print " = " + numbers[1..-1].inject(numbers.first.first.to_f) { |t,s| t - s[0].to_f() }.to_s.sub(/.0+\z/, '')
+  end
 end
