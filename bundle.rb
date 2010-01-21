@@ -7,7 +7,8 @@ bundle 'Math' do |bundle|
   bundle.description =  <<END
 Support for performing different calculations inside TextMate.
 END
-
+  bundle.repository = "git://github.com/aptana/math-rbundle.git"
+  
   bundle.menu 'Math' do |main_menu|
     main_menu.command 'Evaluate Line / Selection'
     main_menu.command 'Evaluate and Replace Expression'
