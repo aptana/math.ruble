@@ -1,5 +1,5 @@
 require 'radrails'
-# FIXME Not sure how to convert this and get it working!
+# FIXME Won't work on Windows! Convert to ruby!
 command 'Evaluate Line / Selection' do |cmd|
   cmd.key_binding = 'CONTROL+M2+C'
   cmd.output = :insert_as_text
