@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 command 'Hex to Decimal' do |cmd|
   cmd.key_binding = 'CONTROL+M2+C'

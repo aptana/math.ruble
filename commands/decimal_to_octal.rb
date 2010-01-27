@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 command 'Decimal to Octal' do |cmd|
   cmd.key_binding = 'CONTROL+M2+C'

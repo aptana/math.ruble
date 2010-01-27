@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 # FIXME Won't work on Windows! Convert to ruby!
 command 'Evaluate and Replace Expression' do |cmd|
   cmd.key_binding = 'CONTROL+M2+C'

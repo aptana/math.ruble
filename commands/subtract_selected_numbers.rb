@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 command 'Subtract Numbers in Line / Selection' do |cmd|
   cmd.key_binding = 'CONTROL+M2+C'

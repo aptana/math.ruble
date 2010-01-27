@@ -1,5 +1,5 @@
-require 'radrails'
-require 'radrails/progress'
+require 'ruble'
+require 'ruble/progress'
 
 command 'Send Line / Selection to Google Calculator' do |cmd|
   cmd.key_binding = 'CONTROL+M2+C'
@@ -11,7 +11,7 @@ command 'Send Line / Selection to Google Calculator' do |cmd|
     context.exit_discard if query.empty?
       
     require 'net/http'    
-    RadRails.call_with_progress(:message => 'Querying Google...') do
+    Ruble.call_with_progress(:message => 'Querying Google...') do
       response = Net::HTTP.get('www.google.com', '/search?q=' + query)
       if response =~ /<b>.*? = (.*?)<\/b>/
         answer = $1
