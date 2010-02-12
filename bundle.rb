@@ -2,9 +2,9 @@ require 'java'
 require 'ruble'
 
 bundle 'Math' do |bundle|
-  bundle.author = 'Allan Odgaard'
-  bundle.contact_email_rot_13 = 'gz-ohaqyrf@znpebzngrf.pbz'
-  bundle.description = "Support for performing different calculations inside TextMate."
+  bundle.author = 'Christopher Williams'
+  bundle.copyright = "© Copyright 2010 Aptana Inc. Distributed under the MIT license."
+  bundle.description = "Support for performing different calculations, ported from TextMate."
   bundle.repository = "git://github.com/aptana/math.ruble.git"
   
   bundle.menu 'Math' do |main_menu|
