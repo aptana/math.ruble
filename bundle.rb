@@ -22,7 +22,7 @@ bundle do |bundle|
       submenu.command 'Hex to Decimal'
       submenu.command 'Octal to Decimal'
     end
-    # main_menu.separator
-    # main_menu.command 'Send Line / Selection to Google Calculator'
+    main_menu.separator
+    main_menu.command 'Send Line / Selection to Google Calculator'
   end
 end
