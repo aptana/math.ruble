@@ -222,7 +222,7 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-copyright: © Copyright 2010 Aptana Inc. Distributed under the MIT license.
+copyright: Copyright 2010 Aptana Inc. Distributed under the MIT license.
 customProperties: null
 decreaseIndentMarkers: &id002 {}
 description: Support for performing different calculations, ported from TextMate.

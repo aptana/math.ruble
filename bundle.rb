@@ -3,7 +3,7 @@ require 'ruble'
 
 bundle do |bundle|
   bundle.author = 'Christopher Williams'
-  bundle.copyright = "© Copyright 2010 Aptana Inc. Distributed under the MIT license."
+  bundle.copyright = "Copyright 2010 Aptana Inc. Distributed under the MIT license."
   bundle.display_name =  'Math'
   bundle.description = "Support for performing different calculations, ported from TextMate."
   bundle.repository = "git://github.com/aptana/math.ruble.git"
