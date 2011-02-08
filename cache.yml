@@ -96,6 +96,7 @@ children:
   async: false
   customProperties: null
   displayName: Add Numbers in Line / Selection
+  input: [selection, line]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+C]
@@ -109,6 +110,7 @@ children:
   async: false
   customProperties: null
   displayName: Decimal to Hex
+  input: [selection, word]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+C]
@@ -122,6 +124,7 @@ children:
   async: false
   customProperties: null
   displayName: Decimal to Octal
+  input: [selection, word]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+C]
@@ -135,6 +138,7 @@ children:
   async: false
   customProperties: null
   displayName: Evaluate and Replace Expression
+  input: [selection, line]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+C]
@@ -148,6 +152,7 @@ children:
   async: false
   customProperties: null
   displayName: Evaluate Line / Selection
+  input: [selection, line]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+C]
@@ -161,6 +166,7 @@ children:
   async: false
   customProperties: null
   displayName: Evaluate and Replace Expression (rounded)
+  input: [selection, line]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+C]
@@ -174,6 +180,7 @@ children:
   async: false
   customProperties: null
   displayName: Hex to Decimal
+  input: [selection, word]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+C]
@@ -187,6 +194,7 @@ children:
   async: false
   customProperties: null
   displayName: Octal to Decimal
+  input: [selection, word]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+C]
@@ -200,6 +208,7 @@ children:
   async: false
   customProperties: null
   displayName: Send Line / Selection to Google Calculator
+  input: [selection, line]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+C]
@@ -213,6 +222,7 @@ children:
   async: false
   customProperties: null
   displayName: Subtract Numbers in Line / Selection
+  input: [selection, line]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+C]
