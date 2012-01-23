@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Decimal to Hex' do |cmd|
+command t(:decimal_to_hex) do |cmd|
   cmd.key_binding = 'CONTROL+M2+C'
   cmd.output = :replace_selection
   cmd.input = :selection, :word

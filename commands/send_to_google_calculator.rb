@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Send Line / Selection to Google Calculator' do |cmd|
+command t(:send_to_google_calc) do |cmd|
   cmd.key_binding = 'CONTROL+M2+C'
   cmd.output = :replace_selection
   cmd.input = :selection, :line

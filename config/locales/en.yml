@@ -1,0 +1,13 @@
+en:
+  bundle_name: 'Math'
+  eval_line: 'Evaluate Line / Selection'
+  eval_and_replace: 'Evaluate and Replace Expression'
+  eval_and_replace_rounded: 'Evaluate and Replace Expression (rounded)'
+  add_numbers: 'Add Numbers in Line / Selection'
+  subtract_numbers: 'Subtract Numbers in Line / Selection'
+  convert: 'Convert'
+  decimal_to_hex: 'Decimal to Hex'
+  decimal_to_octal: 'Decimal to Octal'
+  hex_to_decimal: 'Hex to Decimal'
+  octal_to_decimal: 'Octal to Decimal'
+  send_to_google_calc: 'Send Line / Selection to Google Calculator'

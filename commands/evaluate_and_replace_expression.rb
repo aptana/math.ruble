@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Evaluate and Replace Expression' do |cmd|
+command t(:eval_and_replace) do |cmd|
   cmd.key_binding = 'CONTROL+M2+C'
   cmd.output = :replace_selection
   cmd.input = :selection, :line

@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Add Numbers in Line / Selection' do |cmd|
+command t(:add_numbers) do |cmd|
   cmd.key_binding = 'CONTROL+M2+C'
   cmd.output = :insert_as_text
   cmd.input = :selection, :line
