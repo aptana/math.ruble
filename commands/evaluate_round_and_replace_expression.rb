@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'ruble'
 
 command t(:eval_and_replace_rounded) do |cmd|
@@ -6,7 +7,7 @@ command t(:eval_and_replace_rounded) do |cmd|
   cmd.input = :selection, :line
   cmd.invoke do
     begin
-      result = eval($stdin.read.gsub(/[$®£]/, '')).to_s
+      result = eval($stdin.read.gsub(/[$€£]/, '')).to_s
       result = "1" if result == "true"
       result = "0" if result == "false"
                
